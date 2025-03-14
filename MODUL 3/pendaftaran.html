@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title> 
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initia-scale=1.0">
+    <meta name="author" content="Rafid Dwi Putra Andino">
+    <meta name="Nim" content="243307084">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #666;
+            padding: 5px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 50px;
+            background: #ccc;
+            padding: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 10;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 10px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 500px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width:600px){
+            nav,article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Judul Artikel</h1>
+             <fieldset>
+                <legend>Informasi Pribadi</legend>
+                <table style="padding: 5px;">
+                    <tr>
+                        <td><label for="Nama">Nama</label></td>
+                        <td><input type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Telepon">No. Telepon</label></td>
+                        <td> <input type="tel" pattern="[0-9]{10,13}" placeholder="Masukkan Nomor Telepon"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Alamat Email</label></td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                    <td><label for="ttl">Tanggal Lahir</label></td>
+                    <td><input type="date" min="1987-01-01" max="1993-01-01"></td>
+                    </tr>
+                </table>
+             </fieldset>
+            <fieldset>
+                <legend>Permintaan Pertemuan</legend>
+                <table>
+                    <tr>
+                        <td><label for="Tp">Tujuan Pertemuan</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Tp">Tingkat Pertemuan</label></td>
+                        <td><input type="range" min="0" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Tp">Tanggal</label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Tp">Waktu</label></td>
+                        <td><input type="time" min="17.00" max="21.00"></td>
+                    </tr>
+                </table>
+            </fieldset>
+                        <button type="submit" value="Submit">Submit</button>
+             
+             
+            <p>
+              Halaman ini menampilkan form Informasi pribadi dan permintaan Pertemuan.
+             </p>
+        </article>
+    </section>
+    <footer>
+        <p>Powered By Rafid Dwi Putra Andino </p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Permintaan Pertemuan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 600px;
+            margin: 20px auto;
+        }
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 150px;
+            text-align: left;
+        }
+        .form-group input, 
+        .form-group select {
+            width: 200px;
+            padding: 4px;
+            border: 1px solid #000;
+        }
+        .form-group input[type="date"],
+        .form-group input[type="time"] {
+            width: auto;
+        }
+        .form-group input[type="range"] {
+            width: 150px;
+        }
+        button {
+            padding: 5px 10px;
+            border: 1px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+            <div class="form-group">
+                <label for="telepon">No. Telepon</label>
+                <input type="tel" id="telepon" name="telepon">
+            </div>
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="lahir">Tanggal Lahir</label>
+                <input type="date" id="lahir" name="lahir">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Permintaan Pertemuan</legend>
+            <div class="form-group">
+                <label for="tujuan">Tujuan Pertemuan</label>
+                <input type="text" id="tujuan" name="tujuan">
+            </div>
+            <div class="form-group">
+                <label for="kepentingan">Tingkat Kepentingan Pertemuan</label>
+                <input type="range" id="kepentingan" name="kepentingan">
+            </div>
+            <div class="form-group">
+                <label for="tanggal">Tanggal</label>
+                <input type="date" id="tanggal" name="tanggal">
+            </div>
+            <div class="form-group">
+                <label for="waktu">Waktu</label>
+                <input type="time" id="waktu" name="waktu">
+            </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </div>
+
+</body>
+</html>

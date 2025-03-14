@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Halaman Video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafid Dwi Putra Andino">
+    <meta name="Nim" content="243307084">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #666;
+            padding: 5px;
+            height: 140px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 50px;
+            background: #ccc;
+            padding: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 10;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 100px;
+            display: block;
+        }
+        article {
+            float: left;
+            padding: 50px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 750px;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px){
+            nav, article {
+                width: 80px;
+                height: auto;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+
+    <section>
+        <nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="gambar.html">Gambar</a></li>
+<li><a href="event.html">Event</a></li>
+<li><a href="audio.html">Audio</a></li>
+<li><a href="video.html">Video</a></li>
+<li><a href="svg.html">SVG</a></li>
+<li><a href="canvas.html">Canvas</a></li>
+<li><a href="pendaftaran.html">Pendaftaran</a></li>
+</ul>
+        </nav>
+            <article>
+                <h1>Video</h1>
+                <video width="420px" height="auto" controls autoplay muted>
+                   <source src="video/Skateboard.mp4" type="video/mp4">
+                    Browser Tidak Mendukung
+                </video>
+                <p>Halaman ini menampilkan konten video, baik dalam format file lokal maupun melalui platform YouTube.
+                Pengguna dapat memutar video yang tersedia dengan kontrol pemutaran yang disediakan</p>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/fn3KWM1kuAw" frameborder="0"></iframe>
+            </article>
+    </section>
+
+    <footer>
+        <p>Powered By Rafid Dwi Putra Andino</p>
+    </footer>
+
+    
+</body>
+</html>

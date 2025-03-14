@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Halaman Audio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafid Dwi Putra Andino">
+    <meta name="Nim" content="243307084">
+    <style>
+        *{
+            box-sizing : border-box;
+        }
+        body{
+            font-family: Arial, Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #666;
+            padding: 10px;
+            height: 180px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 100px;
+            background: #ccc;
+            padding: 140px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+        article {
+            float: left;
+            padding: 45px;
+            width: 75%;
+            background-color: #f1f1f1;
+            height: 450px;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px){
+            nav, article {
+                width: 100px;
+                height: auto;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Artikel</h2>
+    </header>
+    <section>
+        <Nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </Nav>
+    <article>
+        <h1>AUDIO</h1>
+        <audio controls autoplay>
+            <source src="audio/suara.mp3" type="audio/mpeg"/>
+            Browser Tidak Mendukung Pemutar Video
+      </audio><br>
+        <audio controls muted>
+            <source src="audio/suara1.mp3" type="audio/mpeg"/>
+            Browser Tidak Mendukung Pemutar Video
+      </audio>
+        
+        <p><p>Kesimpulan: Halaman ini menampilkan elemen audio yang memungkinkan pengguna untuk memutar file suara dalam format MP3.
+             Dengan adanya kontrol audio, pengguna dapat memutar, menjeda, dan menyesuaikan volume suara. Fitur autoplay dan mute juga diterapkan pada beberapa elemen audio untuk memberikan pengalaman berbeda dalam mendengarkan suara.</p>
+    </p>
+    </article>
+    </section>
+
+    <footer>
+        <p>Powered By Rafid Dwi Putra Andino</p>
+    </footer>
+
+    
+</body>
+</html>
