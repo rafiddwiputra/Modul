@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout 2</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+
+    .item {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 20px;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+<!-- Scenario 1 -->
+
+<h1>Scenario 1</h1>
+<div class="grid-container">
+  <div class="item" style="grid-row: 1 / 4;">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+  <div class="item">7</div>
+  <div class="item">8</div>
+  <div class="item">9</div>
+  <div class="item"> Dengan grid-row: 1 / 4, elemen 1 membentang dari baris pertama sampai ketiga, menempati ruang vertikal lebih luas dari elemen lainnya.</div>
+</div>
+<!-- scenario 2 -->
+<br><br>
+<h1>Scenario 2</h1>
+<div class="grid-container">
+  <div class="item1" style="grid-column: 1 / 4;">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+  <div class="item">7</div>
+  <div class="item">8</div>
+  <div class="item">9</div>
+  <div class="item">Dengan grid-column: 1 / 4, elemen 1 membentang dari kolom pertama hingga kolom ketiga, memenuhi satu baris penuh secara horizontal.</div>
+</div>
+
+</body>
+</html>

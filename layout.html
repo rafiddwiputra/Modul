@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "menu main right"
+        "menu footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 5px;
+      height: 100vh;
+      background-color: #2196F3;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    header, nav, main, aside, footer {
+      background-color: #d4ecff;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: #333;
+      border: 2px solid #2196F3;
+    }
+    header {
+      grid-area: header;
+    }
+    nav {
+      grid-area: menu;
+    }
+    main {
+      grid-area: main;
+    }
+    aside {
+      grid-area: right;
+    }
+    footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+<div class="grid-container">
+  <header>Header</header>
+  <nav>Menu</nav>
+  <main>Main</main>
+  <aside>Right</aside>
+  <footer>Footer</footer>
+</div></body>
+</html>
